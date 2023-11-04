@@ -12,6 +12,8 @@ jobs:
 
   build:
     name: Build Package
+    needs:
+    - call-workflow
     runs-on: ubuntu-22.04
 
     steps:
